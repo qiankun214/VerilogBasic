@@ -1,11 +1,4 @@
-D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/mult_tb.sv {1 {vlog -work work -vopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/mult_tb.sv
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module mult_tb
-
-Top level modules:
-	mult_tb
-
-} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_top.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_top.v
+D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_top.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_top.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module serial_multrom_mult_top
 
