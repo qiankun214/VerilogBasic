@@ -1,0 +1,22 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_tree/adder_tree_tb.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_tree/adder_tree_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module adder_tree_tb
+
+Top level modules:
+	adder_tree_tb
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_tree/adder_layer.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_tree/adder_layer.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module adder_layer
+
+Top level modules:
+	adder_layer
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_tree/adder_tree.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_tree/adder_tree.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module adder_tree
+
+Top level modules:
+	adder_tree
+
+} {} {}}

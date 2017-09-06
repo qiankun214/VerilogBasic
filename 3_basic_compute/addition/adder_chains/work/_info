@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_tree
+T_opt
+!s110 1499002433
+Vn74PSN429hzz9CiX5L[dQ0
+04 15 4 work tb_adder_chains fast 0
+=1-24f5aad9c052-5958f641-24-2158
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.4;61
+vadder_chains
+Z0 !s110 1499002427
+!i10b 1
+!s100 <E]oJTg9zUG4biRPz[CaW2
+I?aPo1[oWcb74V2gjg>YP50
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains
+w1499002410
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/adder_chains.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/adder_chains.v
+L0 1
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1499002427.360000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/adder_chains.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/adder_chains.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtb_adder_chains
+R0
+!i10b 1
+!s100 m:f6UR=Ic>LS=I4909?M=3
+IiZ9[;_PUNf>nYN9=3Y9o21
+R1
+R2
+w1499001454
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/tb_adder_chains.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/tb_adder_chains.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1499002427.460000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/tb_adder_chains.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/tb_adder_chains.v|
+!i113 0
+R4

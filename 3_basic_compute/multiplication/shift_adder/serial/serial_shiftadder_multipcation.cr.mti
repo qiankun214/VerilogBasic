@@ -1,0 +1,15 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/mult_tb.sv {1 {vlog -work work -vopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/mult_tb.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module mult_tb
+
+Top level modules:
+	mult_tb
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/serial_shiftadder_multipcation.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/serial_shiftadder_multipcation.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module serial_shiftadder_multipcation
+
+Top level modules:
+	serial_shiftadder_multipcation
+
+} {} {}}

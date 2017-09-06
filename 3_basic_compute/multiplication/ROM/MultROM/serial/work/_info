@@ -1,0 +1,108 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/HDL/XRam/writetree
+T_opt
+!s110 1504298285
+VFG=ZaD^6E<aj8a^[7Y2O21
+Z1 04 7 4 work mult_tb fast 0
+=1-24f5aad9c052-59a9c52d-14f-2f88
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.4;61
+R0
+T_opt1
+!s110 1504304569
+VN7FQd?3Xb4kAlVYY3fBd;3
+R1
+=1-24f5aad9c052-59a9ddb8-20d-854
+o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R2
+R0
+vmult_tb
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 >M@A=CaeKRLCI;zCzPKg^1
+IG6;LBCB7DN]GIAnXj4a:c0
+!s105 mult_tb_sv_unit
+S1
+Z4 dD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial
+w1504304709
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/mult_tb.sv
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/mult_tb.sv
+L0 2
+Z5 OL;L;10.4;61
+!s108 1504304715.197000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/mult_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/mult_tb.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vROM_4
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 GiH0edLEzCi[1:3if7OQS0
+Ib^KcU7kVzaQB:[B7M;<kd1
+R4
+w1502968155
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/ROM_4.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/ROM_4.v
+L0 2
+R5
+!s108 1504304715.321000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/ROM_4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/ROM_4.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@r@o@m_4
+vserial_multrom_mult_core
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 LR5?7S9FcbeZZVfl06<SE0
+I=54]WDK=O0eH]PAg0lWzj0
+R4
+w1504304547
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_core.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_core.v
+L0 1
+R5
+!s108 1504304715.441000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_core.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_core.v|
+!i113 0
+R6
+vserial_multrom_mult_top
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 TfKo[[1e<KGcHNBG24LL51
+I_7@TP5L^`3d64a3NY?adD3
+R4
+w1504077345
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_top.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_top.v
+L0 1
+R5
+!s108 1504304715.561000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/ROM/MultROM/serial/serial_multrom_mult_top.v|
+!i113 0
+R6

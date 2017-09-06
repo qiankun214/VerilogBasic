@@ -1,0 +1,61 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modeltech64_10.4/examples
+T_opt
+!s110 1502291235
+V1=^ijO>:Pz4<SS_zWLE[K0
+04 7 4 work mult_tb fast 0
+=1-24f5aad9c052-598b2523-167-7ec
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.4;61
+vmult_tb
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z0 !s110 1502291232
+!i10b 1
+!s100 >8A[0Y0Yc[eR7QUj?`;@L2
+IO5P_Oj:9l38oEd]iBS?ZE1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 mult_tb_sv_unit
+S1
+Z2 dD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial
+w1502290686
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/mult_tb.sv
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/mult_tb.sv
+L0 1
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1502291231.994000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/mult_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/mult_tb.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vserial_shiftadder_multipcation
+R0
+!i10b 1
+!s100 _1jDHcaYn`@l5>hAiA6mz3
+IL8^cNSJzKiW;M0iDMIdba1
+R1
+R2
+w1502291224
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/serial_shiftadder_multipcation.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/serial_shiftadder_multipcation.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1502291232.106000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/serial_shiftadder_multipcation.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial/serial_shiftadder_multipcation.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

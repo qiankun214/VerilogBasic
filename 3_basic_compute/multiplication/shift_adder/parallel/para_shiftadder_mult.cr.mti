@@ -1,0 +1,43 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_adder.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_adder.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module shift_adder
+
+Top level modules:
+	shift_adder
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_unit.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_unit.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module shift_unit
+
+Top level modules:
+	shift_unit
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/parallel_shifter.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/parallel_shifter.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module parallel_shifter
+
+Top level modules:
+	parallel_shifter
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_tree.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_tree.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module adder_tree
+
+Top level modules:
+	adder_tree
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/tb/mult_tb.sv {1 {vlog -work work -vopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/tb/mult_tb.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module mult_tb
+
+Top level modules:
+	mult_tb
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_layer.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_layer.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module adder_layer
+
+Top level modules:
+	adder_layer
+
+} {} {}}

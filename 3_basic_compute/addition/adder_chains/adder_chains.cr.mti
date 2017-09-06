@@ -1,0 +1,15 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/tb_adder_chains.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/tb_adder_chains.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_adder_chains
+
+Top level modules:
+	tb_adder_chains
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/adder_chains.v {1 {vlog -work work -vopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/adder_chains/adder_chains.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module adder_chains
+
+Top level modules:
+	adder_chains
+
+} {} {}}

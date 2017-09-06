@@ -1,0 +1,141 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/serial
+T_opt
+!s110 1502765165
+Vi>0l3ih8=Yee3O==^YlN;2
+04 7 4 work mult_tb fast 0
+=1-24f5aad9c052-5992606d-2ca-35a8
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.4;61
+vadder_layer
+Z0 !s110 1502765157
+!i10b 1
+!s100 KX><6EXdMmDWjadGVcHkJ1
+IHMX`PcXU7?6;j;Q]DGV[81
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel
+w1502762773
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_layer.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_layer.v
+L0 1
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1502765157.276000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_layer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_layer.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vadder_tree
+R0
+!i10b 1
+!s100 ^?^F[4=jg6oo5T?0?Yi742
+I^ml^ffeHoEzP0:V=oXkkS0
+R1
+R2
+w1502763141
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_tree.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_tree.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1502765157.373000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_tree.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/adder_tree.v|
+!i113 0
+R4
+vmult_tb
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+R0
+!i10b 1
+!s100 @k351NzdfV;nURcMVd;g>0
+IZ;?=TBgSh7[AiACZfgA@d1
+R1
+!s105 mult_tb_sv_unit
+S1
+R2
+w1502764093
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/tb/mult_tb.sv
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/tb/mult_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1502765157.799000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/tb/mult_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/tb/mult_tb.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vparallel_shifter
+R0
+!i10b 1
+!s100 m<J`6R1MDZ>LT:]5iD82i0
+I7mNU@Zmb6Q7k07RnhkcU;3
+R1
+R2
+w1502765078
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/parallel_shifter.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/parallel_shifter.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1502765157.481000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/parallel_shifter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/parallel_shifter.v|
+!i113 0
+R4
+vshift_adder
+R0
+!i10b 1
+!s100 PDmozBj1LGgMiCT5SnNl03
+I=mcUb9X7b5_mb`^Dn@djz2
+R1
+R2
+w1502762789
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_adder.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1502765157.590000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_adder.v|
+!i113 0
+R4
+vshift_unit
+R0
+!i10b 1
+!s100 =@QGkzGcj29BJ0zThhDAM3
+IK<TS;mkoZNQgkIC`Z7Gmb0
+R1
+R2
+w1502724243
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_unit.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1502765157.697000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_unit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/multiplication/shift_adder/parallel/shift_unit.v|
+!i113 0
+R4
