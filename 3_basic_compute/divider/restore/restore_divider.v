@@ -27,21 +27,26 @@ always @ (posedge clk or negedge rst_n) begin
 			divisor_move[2 * WIDTH - 1:0] <= 'b0;
 			divisor_lock <= divisor;
 			dout <= 'b0;
-		end else if((divisor_move >= '{remainder_r}) && dout = 'b0) begin
+		end else if((divisor_move > '{remainder_r}) && (dout == 'b0)) begin
 			remainder_r <= remainder_r;
 			dout <= 'b0;
 			divisor_move <= divisor_move >> 1;
 			divisor_lock <= divisor_lock;
-		end else if(divisor_move >= divisor_lock) begin
+		end else if(divisor_move >= '{divisor_lock}) begin
 			if(remainder_r[2 * WIDTH] == 1'b0) begin //sub
 				remainder_r <= remainder_r - divisor_move;
 				dout <= {dout[2 * WIDTH - 2:0],1'b1};
-				divisor_move <= divisor_move >> 1;
+				// divisor_move <= divisor_move >> 1;
 				divisor_lock <= divisor_lock;
+				if(remainder_r >= divisor_move) begin
+					divisor_move <= divisor_move >> 1;
+				end else begin
+					divisor_move <= divisor_move;
+				end
 			end else begin	//restore
-				remainder_r <= remainder_r + divisor_move << 1;
-				dout <= {dout[2 * WIDTH - 1:1],1'b1};
-				divisor_move <= divisor_move;
+				remainder_r <= remainder_r + divisor_move;
+				dout <= {dout[2 * WIDTH - 1:1],1'b0};
+				divisor_move <= divisor_move >> 1;
 				divisor_lock <= divisor_lock;
 			end
 		end else begin

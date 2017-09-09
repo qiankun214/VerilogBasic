@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/shift_sub
+vrestore_divider
+Z0 !s110 1504934659
+!i10b 1
+!s100 iJCh]NL>YKjG7U0WYZLiL2
+ILUk`QhSM<990Z_fe=LK@O2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore
+w1504934140
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/restore_divider.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/restore_divider.v
+L0 1
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1504934659.804000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/restore_divider.v|
+!s90 -reportprogress|300|-work|work|-novopt|-covercells|-cover|sbcet3|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/restore_divider.v|
+!i113 1
+Z4 !s102 -covercells -cover sbcet3
+o-work work -covercells -cover sbcet3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtb_divider
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+R0
+!i10b 1
+!s100 TXnCIdGY4Afj;7b9Z?zk;2
+IKN=iE9heb<]2DDfbkooh03
+R1
+!s105 tb_divider_sv_unit
+S1
+R2
+w1504934239
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/tb_divider.sv
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/tb_divider.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1504934659.929000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/tb_divider.sv|
+!s90 -reportprogress|300|-work|work|-novopt|-sv|-covercells|-cover|sbcet3|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/tb_divider.sv|
+!i113 1
+R4
+o-work work -sv -covercells -cover sbcet3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

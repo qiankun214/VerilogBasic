@@ -1,0 +1,25 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/restore_divider.v
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           26        26         0     100.0
+    Branches                         9         9         0     100.0
+    FEC Condition Terms              2         2         0     100.0
+    Toggle Bins                    104       104         0     100.0
+
+=================================================================================
+=== File: D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/restore/tb_divider.sv
+=================================================================================
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Stmts                           23        21         2      91.3
+    Branches                         2         1         1      50.0
+    FEC Condition Terms              2         0         2       0.0
+    Toggle Bins                     78        78         0     100.0
+
+
+Total Coverage By File (code coverage only, filtered view): 84.2%
+
