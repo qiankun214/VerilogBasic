@@ -1,9 +1,0 @@
--html
--htmldir
-covhtmlreport
--verbose
--pa
--threshL
-50
--threshH
-90

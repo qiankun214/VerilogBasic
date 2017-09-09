@@ -1,9 +1,0 @@
-testlist.html = NON_SCOPE
-globattrlist.html = NON_SCOPE
-__head.htm = NON_SCOPE
-__frametop.htm = NON_SCOPE
-__menu.htm = NON_SCOPE
-legacy.html = NON_SCOPE
-index.html = NON_SCOPE
-covsummary.html = NON_SCOPE
-blank.htm = NON_SCOPE
