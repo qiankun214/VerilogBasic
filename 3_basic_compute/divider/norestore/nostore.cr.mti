@@ -1,0 +1,15 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/norestore/norestore_divider.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/norestore/norestore_divider.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module norestore_divider
+
+Top level modules:
+	norestore_divider
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/norestore/tb_divider.sv {1 {vlog -work work -novopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/norestore/tb_divider.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_divider
+
+Top level modules:
+	tb_divider
+
+} {} {}}
