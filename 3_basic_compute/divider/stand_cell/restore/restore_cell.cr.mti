@@ -1,0 +1,22 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/stand_cell/restore/restore_serial_divider.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/stand_cell/restore/restore_serial_divider.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module restore_cell_divider
+
+Top level modules:
+	restore_cell_divider
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/stand_cell/restore/tb_divider.sv {1 {vlog -work work -novopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/stand_cell/restore/tb_divider.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_divider
+
+Top level modules:
+	tb_divider
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/stand_cell/restore/restore_cell.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/divider/stand_cell/restore/restore_cell.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module restore_cell
+
+Top level modules:
+	restore_cell
+
+} {} {}}
