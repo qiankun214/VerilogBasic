@@ -12,7 +12,7 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	square_cell
 
-} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/square/tb_square.sv {1 {vlog -work work -novopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/square/tb_square.sv
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/3_basic_compute/square/tb_square.sv {1 {vlog -work work -novopt -sv -stats=none {D:\HDL\veilorg\learning_with_book\digital_signal_process\3_basic_compute\square\tb_square.sv}
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module tb_square
 

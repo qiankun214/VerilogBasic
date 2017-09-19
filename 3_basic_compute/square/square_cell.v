@@ -14,7 +14,7 @@ module square_cell #(
 );
 
 wire [2 * WIDTH - 1:0]target_data = {remainder_din[2 * WIDTH - 3:0],radicand[2 * STEP +:2]};
-wire [2 * WIDTH - 1:0]try_data = '{last_dout,2'b01};
+wire [2 * WIDTH - 1:0]try_data = {last_dout,2'b01};
 
 always @(posedge clk or negedge rst_n) begin
 	if(~rst_n) begin

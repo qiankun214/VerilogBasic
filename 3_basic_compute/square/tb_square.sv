@@ -9,7 +9,7 @@ logic rst_n;  // Asynchronous reset active low
 logic [2 * WIDTH - 1:0]radicand;
 
 logic [WIDTH - 1:0]dout;
-logic [WIDTH - 1:0]remainder;
+logic [2 * WIDTH - 1:0]remainder;
 
 square_extractor #(
 	.WIDTH(WIDTH)
@@ -17,7 +17,7 @@ square_extractor #(
 	.clk(clk),    // Clock
 	.rst_n(rst_n),  // Asynchronous reset active low
 
-	.radicand(remainder),
+	.radicand(radicand),
 
 	.dout(dout),
 	.remainder(remainder)
@@ -36,13 +36,20 @@ initial begin
 	#10 rst_n = 1'b1;
 end
 
+logic [2 * WIDTH - 1:0]act;
+logic [2 * WIDTH - 1:0]dout_ex;
 initial begin
 	radicand = 'b0;
 	forever begin
 		@(negedge clk);
-		radicand = (WIDTH)'($urandom_range(0,2 ** (2 * WIDTH)));
+		radicand = (2 * WIDTH)'($urandom_range(0,2 ** (2 * WIDTH)));
 		repeat(4 * WIDTH) begin
 			@(negedge clk);
+		end
+		dout_ex = '{dout};
+		act = dout_ex * dout_ex + remainder;
+		if(act != radicand) begin
+			$stop;
 		end
 	end
 end
