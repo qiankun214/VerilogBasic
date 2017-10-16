@@ -57,4 +57,28 @@ sck_gen #(
 
 	.spi_finish(spi_finish)
 );
+
+spi_datapath #(
+	.SPI_MAX_WIDTH_LOG(SPI_MAX_WIDTH_LOG)
+) u_spi_datapath (
+	.clk(clk),    // Clock
+	.rst_n(rst_n),  // Asynchronous reset active low
+
+	//config
+	.cpha(cpha),
+
+	//control flow
+	.sck_first_edge(sck_first_edge),
+	.sck_second_edge(sck_second_edge),
+	.spi_start(spi_start),
+
+	//spi
+	.miso(miso),
+	.mosi(mosi),
+
+	//data
+	.din(din),
+	.dout(dout)
+);
+
 endmodule
