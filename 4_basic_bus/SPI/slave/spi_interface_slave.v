@@ -1,17 +1,16 @@
-module spi_interface #(
-	parameter SPI_MAX_WIDTH_LOG = 4,
-	parameter SPI_SCAIL_LOG = 8
+module spi_interface_slave #(
+	parameter SPI_MAX_WIDTH_LOG = 4
 )(
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
 
-	input spi_start,
+	output spi_start,
 	output spi_finish,
 
-	output sck,
-	output cs,
-	output mosi,
-	input miso,
+	input sck,
+	input cs,
+	input mosi,
+	output miso,
 
 	input config_req,
 	input [SPI_MAX_WIDTH_LOG + 1:0]config_data,

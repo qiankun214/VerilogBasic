@@ -1,4 +1,4 @@
-module spi_datapath_master #(
+module spi_datapath_slave #(
 	parameter SPI_MAX_WIDTH_LOG = 4
 )(
 	input clk,    // Clock
@@ -12,8 +12,8 @@ module spi_datapath_master #(
 	input spi_start,
 
 	//spi
-	input miso,
-	output mosi,
+	output miso,
+	input mosi,
 
 	//data
 	input [2 ** SPI_MAX_WIDTH_LOG - 1:0]din,
@@ -39,11 +39,11 @@ always @ (posedge clk or negedge rst_n) begin
 		din_lock <= din;
 		dout <= 'b0;
 	end else if(spi_read) begin
-		dout <= {miso,dout[2 ** SPI_MAX_WIDTH_LOG - 1:1]};
+		dout <= {mosi,dout[2 ** SPI_MAX_WIDTH_LOG - 1:1]};
 	end else if(spi_write) begin
 		din <= din >> 1;
 	end
 end
-assign mosi = din_lock[0];
+assign miso = din_lock[0];
 
 endmodule
