@@ -7,7 +7,7 @@ module sck_gen #(
 
 	input spi_start,
 	input cpol,
-	input spi_width,
+	input [SPI_MAX_WIDTH_LOG - 1:0]spi_width,
 
 	output reg sck_first_edge,sck_second_edge,
 
@@ -37,7 +37,7 @@ always @ (negedge clk or negedge rst_n) begin
 					mode <= INIT;
 			end
 			WORK:begin
-				if(counte == spi_width) begin
+				if(counte > {1'b0,spi_width}) begin
 					mode <= INIT;
 				end else begin
 					mode <= WORK;
