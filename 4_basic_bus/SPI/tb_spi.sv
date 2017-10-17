@@ -90,7 +90,7 @@ initial begin
 
 	@(negedge clk);
 	config_req = 1'b1;
-	config_data = (SPI_MAX_WIDTH_LOG)'d7;
+	config_data = (SPI_MAX_WIDTH_LOG + 2)'(15);
 	@(negedge clk);
 
 	forever begin

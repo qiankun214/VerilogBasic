@@ -37,14 +37,10 @@ spi_config #(
 
 wire sck_first_edge;
 wire sck_second_edge;
-sck_gen #(
-	.SPI_MAX_WIDTH_LOG(SPI_MAX_WIDTH_LOG),
-	.SPI_SCAIL_LOG(SPI_SCAIL_LOG)
-) u_sck_gen (
+sck_detect u_sck_detect(
 	.clk(clk),    // Clock
 	.rst_n(rst_n),  // Asynchronous reset active low
 
-	.spi_start(spi_start),
 	.cpol(cpol),
 	.spi_width(spi_width),
 
@@ -54,12 +50,13 @@ sck_gen #(
 	.sck(sck),
 	.cs(cs),
 
+	.spi_start(spi_start),
 	.spi_finish(spi_finish)
 );
 
-spi_datapath #(
+spi_datapath_slave #(
 	.SPI_MAX_WIDTH_LOG(SPI_MAX_WIDTH_LOG)
-) u_spi_datapath (
+) u_spi_datapath_slave (
 	.clk(clk),    // Clock
 	.rst_n(rst_n),  // Asynchronous reset active low
 

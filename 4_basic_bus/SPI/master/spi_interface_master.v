@@ -58,9 +58,9 @@ sck_gen #(
 	.spi_finish(spi_finish)
 );
 
-spi_datapath #(
+spi_datapath_master #(
 	.SPI_MAX_WIDTH_LOG(SPI_MAX_WIDTH_LOG)
-) u_spi_datapath (
+) u_spi_datapath_master (
 	.clk(clk),    // Clock
 	.rst_n(rst_n),  // Asynchronous reset active low
 

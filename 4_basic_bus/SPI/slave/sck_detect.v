@@ -1,9 +1,11 @@
-module sck_gen(
+module sck_detect #(
+	parameter SPI_MAX_WIDTH_LOG = 4
+)(
 	input clk,    // Clock
 	input rst_n,  // Asynchronous reset active low
 
 	input cpol,
-	input spi_width,
+	input [SPI_MAX_WIDTH_LOG - 1:0]spi_width,
 
 	output sck_first_edge,sck_second_edge,
 

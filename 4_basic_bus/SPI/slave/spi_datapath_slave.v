@@ -41,7 +41,7 @@ always @ (posedge clk or negedge rst_n) begin
 	end else if(spi_read) begin
 		dout <= {mosi,dout[2 ** SPI_MAX_WIDTH_LOG - 1:1]};
 	end else if(spi_write) begin
-		din <= din >> 1;
+		din_lock <= din_lock >> 1;
 	end
 end
 assign miso = din_lock[0];
