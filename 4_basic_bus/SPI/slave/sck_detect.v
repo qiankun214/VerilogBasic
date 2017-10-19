@@ -5,6 +5,7 @@ module sck_detect #(
 	input rst_n,  // Asynchronous reset active low
 
 	input cpol,
+	input cpha,
 	input [SPI_MAX_WIDTH_LOG - 1:0]spi_width,
 
 	output sck_first_edge,sck_second_edge,
@@ -25,9 +26,19 @@ always @ (posedge clk or negedge rst_n) begin
 	end
 end
 
+reg first_enable;
+always @ (posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
+		first_enable <= 'b0;
+	end else if(spi_start) begin
+		first_enable <= ~cpha;
+	end else if(sck_handle) begin
+		first_enable <= 'b1;
+	end
+end
 assign spi_start = ((cs_last == 1'b1) && (cs == 1'b0))?1'b1:1'b0;
 assign spi_finish = ((cs_last == 1'b0) && (cs == 1'b1))?1'b1:1'b0;
-assign sck_first_edge = ((sck_last == 1'b0) && (sck_handle == 1'b1))?1'b1:1'b0;
+assign sck_first_edge = ((sck_last == 1'b0) && (sck_handle == 1'b1))?first_enable:1'b0;
 assign sck_second_edge = ((sck_last == 1'b1) && (sck_handle == 1'b0))?1'b1:1'b0;
 
 endmodule

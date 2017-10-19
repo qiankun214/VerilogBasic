@@ -42,6 +42,7 @@ sck_detect u_sck_detect(
 	.rst_n(rst_n),  // Asynchronous reset active low
 
 	.cpol(cpol),
+	.cpha(cpha),
 	.spi_width(spi_width),
 
 	.sck_first_edge(sck_first_edge),

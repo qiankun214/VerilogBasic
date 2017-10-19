@@ -7,6 +7,7 @@ module sck_gen #(
 
 	input spi_start,
 	input cpol,
+	input cpha,
 	input [SPI_MAX_WIDTH_LOG - 1:0]spi_width,
 
 	output reg sck_first_edge,sck_second_edge,
@@ -92,7 +93,11 @@ always @ (posedge clk or negedge rst_n) begin
 		sck_second_edge <= 'b0;
 		sck_source <= 'b0;
 	end else if(freq_counte == SCAIL_HALF) begin
-		sck_first_edge <= 1'b1;
+		if((cpha == 1'b1) && (counte == 'b0)) begin
+			sck_first_edge <= 1'b0;
+		end else begin
+			sck_first_edge <= 1'b1;
+		end
 		sck_source <= ~sck_source;
 	end else if(freq_counte == SCAIL) begin
 		sck_second_edge <= 1'b1;

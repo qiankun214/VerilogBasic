@@ -1,32 +1,32 @@
-D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/sck_gen.v {1 {vlog -work work -novopt -stats=none {D:\HDL\veilorg\learning_with_book\digital_signal_process\4_basic_bus\SPI\master\sck_gen.v}
+D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/sck_gen.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/sck_gen.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module sck_gen
 
 Top level modules:
 	sck_gen
 
-} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/spi_interface_master.v {1 {vlog -work work -novopt -stats=none {D:\HDL\veilorg\learning_with_book\digital_signal_process\4_basic_bus\SPI\master\spi_interface_master.v}
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/spi_interface_master.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/spi_interface_master.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module spi_interface_master
 
 Top level modules:
 	spi_interface_master
 
-} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_datapath_slave.v {1 {vlog -work work -novopt -stats=none {D:\HDL\veilorg\learning_with_book\digital_signal_process\4_basic_bus\SPI\slave\spi_datapath_slave.v}
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_datapath_slave.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_datapath_slave.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module spi_datapath_slave
 
 Top level modules:
 	spi_datapath_slave
 
-} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/sck_detect.v {1 {vlog -work work -novopt -stats=none {D:\HDL\veilorg\learning_with_book\digital_signal_process\4_basic_bus\SPI\slave\sck_detect.v}
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/sck_detect.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/sck_detect.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module sck_detect
 
 Top level modules:
 	sck_detect
 
-} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_config.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_config.v
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_config.v {1 {vlog -work work -novopt -stats=none {D:\HDL\veilorg\learning_with_book\digital_signal_process\4_basic_bus\SPI\slave\spi_config.v}
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module spi_config
 
@@ -40,19 +40,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 Top level modules:
 	tb_spi
 
-} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_interface_slave.v {1 {vlog -work work -novopt -stats=none {D:\HDL\veilorg\learning_with_book\digital_signal_process\4_basic_bus\SPI\slave\spi_interface_slave.v}
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_interface_slave.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/slave/spi_interface_slave.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 -- Compiling module spi_interface_slave
 
 Top level modules:
 	spi_interface_slave
-
-} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/spi_datapath_master.v {1 {vlog -work work -novopt -stats=none {D:\HDL\veilorg\learning_with_book\digital_signal_process\4_basic_bus\SPI\master\spi_datapath_master.v}
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module spi_datapath_master
-
-Top level modules:
-	spi_datapath_master
 
 } {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/spi_config.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/spi_config.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
@@ -60,5 +53,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
 
 Top level modules:
 	spi_config
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/spi_datapath_master.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/SPI/master/spi_datapath_master.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module spi_datapath_master
+
+Top level modules:
+	spi_datapath_master
 
 } {} {}}

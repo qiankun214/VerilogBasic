@@ -47,6 +47,7 @@ sck_gen #(
 
 	.spi_start(spi_start),
 	.cpol(cpol),
+	.cpha(cpha),
 	.spi_width(spi_width),
 
 	.sck_first_edge(sck_first_edge),

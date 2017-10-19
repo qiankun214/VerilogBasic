@@ -3,6 +3,7 @@ module tb_spi (
 
 parameter SPI_MAX_WIDTH_LOG = 4;
 parameter SPI_SCAIL_LOG = 8;
+parameter SPI_WIDTH = 16;
 
 logic clk;    // Clock
 logic rst_n;  // Asynchronous reset active low
@@ -90,13 +91,13 @@ initial begin
 
 	@(negedge clk);
 	config_req = 1'b1;
-	config_data = (SPI_MAX_WIDTH_LOG + 2)'(15);
+	config_data = {2'b10,(SPI_MAX_WIDTH_LOG)'(SPI_WIDTH - 1)};
 	@(negedge clk);
 
 	forever begin
 		@(negedge clk);
-		master_din = (2 ** SPI_MAX_WIDTH_LOG)'($urandom_range(0,2 ** SPI_MAX_WIDTH_LOG));
-		slave_din = (2 ** SPI_MAX_WIDTH_LOG)'($urandom_range(0,2 ** SPI_MAX_WIDTH_LOG));
+		master_din = (SPI_WIDTH)'($urandom_range(0,2 ** SPI_WIDTH));
+		slave_din = (SPI_WIDTH)'($urandom_range(0,2 ** SPI_WIDTH));
 		master_spi_start = 1'b1;
 		@(negedge clk);
 		master_spi_start = 1'b0;
@@ -104,8 +105,11 @@ initial begin
 		while(slave_spi_finish != 1'b1) begin
 			@(negedge clk);
 		end
-		$display("%h\-\>%h",master_din,slave_dout);
+		$display("%h\-\>%h",master_dout,slave_din);
 		$display("%h\-\>%h",slave_dout,master_din);
+		if((master_din != slave_dout) || (master_dout != slave_din)) begin
+			$stop;
+		end
 	end
 
 end
