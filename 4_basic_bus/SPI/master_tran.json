@@ -1,0 +1,8 @@
+{signal: [
+  {name: 'clk', wave: 'p......|.....'},
+  {name:'spi_start',wave:'0.10...|.....'},
+  {name:'din',wave:'x.3x...|.....',data:['din']},
+  {name:'spi_finish',wave:'0......|..10.'},
+  {name:'dout',wave:'x......|..4x.',data:['dout']},
+  {name:'cs',wave:'1...0..|.1...'}
+]}

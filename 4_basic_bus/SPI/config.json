@@ -1,0 +1,5 @@
+{signal: [
+  {name: 'clk', wave: 'p......'},
+  {name:'config_req',wave:'0.10...'},
+  {name:'config_data',wave:'x.3x...',data:['data']}
+]}
