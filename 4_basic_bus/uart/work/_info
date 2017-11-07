@@ -1,0 +1,113 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/tempdata/interface_of_dva
+vtb_uart
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1510065070
+!i10b 1
+!s100 oLF?<mLVZKU@h6KHLgmFJ2
+IeANAMU5KL;o^?1^b]N`:T3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+!s105 tb_uart_sv_unit
+S1
+Z1 dD:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart
+w1510065061
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/tb_uart.sv
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/tb_uart.sv
+L0 3
+Z2 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1510065070.837000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/tb_uart.sv|
+!s90 -reportprogress|300|-work|work|-novopt|-sv|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/tb_uart.sv|
+!i113 1
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vuart
+Z3 !s110 1510064583
+!i10b 1
+!s100 aK0?1eL9P4dVfEOehbfoP1
+I@_2;z7CHE8:i`Qei;?Z]51
+R0
+R1
+w1510064460
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1510064583.158000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart.v|
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vuart_baud_gen
+!s110 1510064868
+!i10b 1
+!s100 Md@BcN7o9dbn@mYCFE?SI0
+IY@UaoCeGWU;FgKZQ7F3X20
+R0
+R1
+w1510064861
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_baud_gen.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_baud_gen.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1510064868.606000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_baud_gen.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_baud_gen.v|
+!i113 1
+R4
+vuart_receive
+R3
+!i10b 1
+!s100 iEYGLhXl=jzn_;j4dK@<h2
+IIh33gn4HC>?6e^O0aD2K23
+R0
+R1
+w1510063741
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_receive.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_receive.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1510064583.397000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_receive.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_receive.v|
+!i113 1
+R4
+vuart_send
+R3
+!i10b 1
+!s100 W;:SUdnR[>eZlLF7anX9L0
+ITNWWgK[@>Z[`P7n=S`X?T2
+R0
+R1
+w1510063760
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_send.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_send.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1510064583.514000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_send.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_send.v|
+!i113 1
+R4

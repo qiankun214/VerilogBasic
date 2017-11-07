@@ -1,0 +1,36 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_send.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_send.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_send
+
+Top level modules:
+	uart_send
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_receive.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_receive.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_receive
+
+Top level modules:
+	uart_receive
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/tb_uart.sv {1 {vlog -work work -novopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/tb_uart.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_uart
+
+Top level modules:
+	tb_uart
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_baud_gen.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart_baud_gen.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_baud_gen
+
+Top level modules:
+	uart_baud_gen
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart/uart.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart
+
+Top level modules:
+	uart
+
+} {} {}}

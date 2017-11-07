@@ -31,6 +31,7 @@ always @ (*) begin
 				next_mode = WORK;
 			end else begin
 				next_mode = INIT;
+			end
 		end
 		WORK:begin
 			if(baud_counte == 4'd10) begin
@@ -44,6 +45,7 @@ always @ (*) begin
 end
 assign baud_busy = mode;
 
+// counter for generating baud
 reg [12:0]counter;
 always @ (posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
@@ -57,13 +59,14 @@ always @ (posedge clk or negedge rst_n) begin
 	end
 end
 
+// counter for data flow
 always @ (posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
 		baud_counte <= 'b0;
+	end else if(mode == INIT) begin
+		baud_counte <= 'b0;
 	end else if(counter == BAUD) begin
 		baud_counte <= baud_counte + 1'b1;
-	end else begin
-		baud_counte <= 'b0;
 	end
 end
 

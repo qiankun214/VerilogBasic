@@ -11,6 +11,7 @@ module uart_send (
 	output reg uart_dout
 );
 
+// lock data
 reg [7:0]send_data_lock;
 always @ (posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
@@ -20,6 +21,7 @@ always @ (posedge clk or negedge rst_n) begin
 	end
 end
 
+// data flow
 always @ (posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
 		uart_dout <= 1'b1;
