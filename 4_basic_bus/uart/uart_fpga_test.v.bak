@@ -18,12 +18,12 @@ uart #(
 	.uart_dout(uart_dout),
 
 	.send_start(uart_sign),
-	.send_busy(),
-	.send_finish(),
+	.send_busy,
+	.send_finish,
 	.send_data(data),
 
-	.receive_start(),
-	.receive_busy(),
+	.receive_start,
+	.receive_busy,
 	.receive_finish(uart_sign),
 	.receive_data(data)
 );
