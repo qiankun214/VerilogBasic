@@ -23,7 +23,7 @@ always @ (posedge clk or negedge rst_n) begin
 		ram_write_addr_lock <= 'b0;
 	end else begin
 		ram_write_req_lock <= ram_write_req;
-		ram_write_data_lock <= ram_read_data;
+		ram_write_data_lock <= ram_write_data;
 		ram_write_addr_lock <= ram_write_addr;
 	end
 end
@@ -44,6 +44,6 @@ always @ (posedge clk) begin
 		ram_read_addr_lock <= ram_read_addr;
 	end
 end
-assign ram_read_data <= ram[ram_read_addr_lock];
+assign ram_read_data = ram[ram_read_addr_lock];
 
 endmodule
