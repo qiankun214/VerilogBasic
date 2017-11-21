@@ -65,9 +65,9 @@ end
 always @ (posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
 		fifo_empty <= 1'b1;
-	end else if(almost_empty && fifo_read_req) begin
+	end else if(almost_empty && fifo_read_req && !fifo_write_req) begin
 		fifo_empty <= 1'b1;
-	end else if(!fifo_empty_wire) begin
+	end else if(!fifo_empty_wire || fifo_write_req) begin
 		fifo_empty <= 'b0;
 	end
 end

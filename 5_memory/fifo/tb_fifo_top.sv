@@ -2,7 +2,7 @@
 
 module tb_fifo_top();
 
-parameter DEPTH_LOG = 8;
+parameter DEPTH_LOG = 4;
 parameter WIDTH = 8;
 
 logic clk;
@@ -51,16 +51,18 @@ initial begin
 	forever begin
 		for (int i = 0; i < 2 ** DEPTH_LOG + 4; i++) begin
 			fifo_write_req = 1'b1;
-			fifo_write_data = (WIDTH)'(i);
+			fifo_write_data = (WIDTH)'($urandom_range(0,2 ** WIDTH));
 			if(i > 4) begin
 				fifo_read_req = 1'b0;
 			end
 			@(negedge clk);
 		end
-		for (int i = 0; i < 2 ** DEPTH_LOG + 4; i++) begin
+		for (int i = 0; i < 2 ** DEPTH_LOG + 8; i++) begin
 			fifo_read_req = 1'b1;
 			if(i > 4) begin
 				fifo_write_req = 1'b0;
+			end else begin
+				fifo_write_data = (WIDTH)'($urandom_range(0,2 ** WIDTH));
 			end
 			@(negedge clk);
 		end

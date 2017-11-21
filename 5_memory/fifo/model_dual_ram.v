@@ -32,7 +32,7 @@ end
 reg [WIDTH - 1:0]ram[2 ** DEPTH_LOG - 1:0];
 always @(posedge clk) begin
 	if(ram_write_req_lock) begin
-		ram[ram_write_data_lock] <= ram_write_data_lock;
+		ram[ram_write_addr_lock] <= ram_write_data_lock;
 	end
 end
 
