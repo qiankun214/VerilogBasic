@@ -15,7 +15,7 @@ module fifo_top #(
 );
 
 wire ram_write_req;
-wire [DEPTH_LOG:0]ram_write_addr,ram_read_addr;
+wire [DEPTH_LOG - 1:0]ram_write_addr,ram_read_addr;
 wire [WIDTH - 1:0]ram_write_data;
 fifo_control #(
 	.WIDTH    (WIDTH),
@@ -41,9 +41,9 @@ pkg_dual_ram #(
 	.clk           (clk),
 	.rst_n         (rst_n),
 	.ram_write_req (ram_write_req),
-	.ram_write_addr(ram_write_addr[DEPTH_LOG - 1:0]),
+	.ram_write_addr(ram_write_addr),
 	.ram_write_data(ram_write_data),
-	.ram_read_addr (ram_read_addr[DEPTH_LOG - 1:0]),
+	.ram_read_addr (ram_read_addr),
 	.ram_read_data (ram_read_data)
 );
 

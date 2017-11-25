@@ -47,25 +47,49 @@ initial begin
 	fifo_read_req = 'b0;
 end
 
-initial begin
+task test_normal_read_write();
+	for (int i = 0; i < 2 ** DEPTH_LOG + 4; i++) begin
+		fifo_write_req = 1'b1;
+		fifo_write_data = (WIDTH)'(i) * 2;
+		@(negedge clk);
+	end
+	fifo_write_req = 'b0;
+	for (int i = 0; i < 2 ** DEPTH_LOG + 4; i++) begin
+		fifo_read_req = 1'b1;
+		@(negedge clk);
+	end
+	fifo_read_req = 'b0;
+endtask : test_normal_read_write
+
+task test_empty_read_write();
+	for (int i = 0; i < 2 ** DEPTH_LOG; i++) begin
+		fifo_write_req = 1'b1;
+		fifo_read_req = 1'b1;
+		fifo_write_data = (WIDTH)'(i);
+		@(negedge clk);
+	end
+endtask : test_empty_read_write
+
+task test_full_read_write();
+	for (int i = 0; i < 2 ** DEPTH_LOG + 4; i++) begin
+		fifo_write_req = 1'b1;
+		fifo_write_data = (WIDTH)'(i);
+		@(negedge clk);
+	end
 	forever begin
-		for (int i = 0; i < 2 ** DEPTH_LOG + 4; i++) begin
-			fifo_write_req = 1'b1;
-			fifo_write_data = (WIDTH)'($urandom_range(0,2 ** WIDTH));
-			if(i > 4) begin
-				fifo_read_req = 1'b0;
-			end
-			@(negedge clk);
-		end
-		for (int i = 0; i < 2 ** DEPTH_LOG + 8; i++) begin
-			fifo_read_req = 1'b1;
-			if(i > 4) begin
-				fifo_write_req = 1'b0;
-			end else begin
-				fifo_write_data = (WIDTH)'($urandom_range(0,2 ** WIDTH));
-			end
-			@(negedge clk);
-		end
+		fifo_write_req = 1'b1;
+		fifo_read_req = 1'b1;
+		fifo_write_data = (WIDTH)'($urandom_range(0,2 ** WIDTH));
+		@(negedge clk);
+	end
+endtask : test_full_read_write
+
+initial begin
+	@(negedge clk);
+	forever begin
+		// test_normal_read_write();
+		// test_empty_read_write();
+		test_full_read_write();
 	end
 end
 
