@@ -115,4 +115,6 @@ class autoeda_testbench_generator(autoeda_component_template_generator):
 
 if __name__ == '__main__':
     test = autoeda_testbench_generator()
-    test("../fifo_top.v", tb_path="../tb_fifo_top.sv", fsdb=False, vcd=False)
+    test("../5_memory/stack/stack.v",
+         tb_path="../5_memory/stack/tb_stack.sv",
+         fsdb=False, vcd=False)

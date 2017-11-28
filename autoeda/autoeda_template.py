@@ -82,6 +82,6 @@ class autoeda_component_template_generator(autoeda_file_handle,
 
 if __name__ == '__main__':
     test = autoeda_component_template_generator()
-    test_dict = {"u_fifo_ram": "../pkg_dual_ram.v",
-                 "u_fifo_control": "../fifo_control.v"}
-    test(test_dict)
+    test_dict = {"stack_ram": "../5_memory/stack/pkg_simple_ram.v",
+                 "stack_control": "../5_memory/stack/stack_controller.v"}
+    test(test_dict, template_path="../5_memory/stack/stack.v")
