@@ -1,0 +1,29 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/stack/model_simple_ram.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/stack/model_simple_ram.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module model_simple_ram
+
+Top level modules:
+	model_simple_ram
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/stack/tb_stack.sv {1 {vlog -work work -novopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/stack/tb_stack.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_stack
+
+Top level modules:
+	tb_stack
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/stack/stack.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/stack/stack.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module stack
+
+Top level modules:
+	stack
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/stack/pkg_simple_ram.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/stack/pkg_simple_ram.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module pkg_simple_ram
+
+Top level modules:
+	pkg_simple_ram
+
+} {} {}}

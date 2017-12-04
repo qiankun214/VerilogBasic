@@ -1,0 +1,219 @@
+# Compile of tb_fifo_top.sv was successful.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim -gui D:\HDL\veilorg\learning_with_book\digital_signal_process\5_memory\fifo\fifo.mpf 
+# Start time: 21:33:56 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+add wave -position end  sim:/tb_fifo_top/DEPTH_LOG
+add wave -position end  sim:/tb_fifo_top/WIDTH
+add wave -position end  sim:/tb_fifo_top/clk
+add wave -position end  sim:/tb_fifo_top/rst_n
+add wave -position end  sim:/tb_fifo_top/fifo_write_req
+add wave -position end  sim:/tb_fifo_top/fifo_write_data
+add wave -position end  sim:/tb_fifo_top/fifo_full
+add wave -position end  sim:/tb_fifo_top/fifo_read_req
+add wave -position end  sim:/tb_fifo_top/fifo_empty
+add wave -position end  sim:/tb_fifo_top/ram_read_data
+run -all
+# Compile of tb_fifo_top.sv was successful.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 21:38:27 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+add wave -position end  sim:/tb_fifo_top/DEPTH_LOG
+add wave -position end  sim:/tb_fifo_top/WIDTH
+add wave -position end  sim:/tb_fifo_top/clk
+add wave -position end  sim:/tb_fifo_top/rst_n
+add wave -position end  sim:/tb_fifo_top/fifo_write_req
+add wave -position end  sim:/tb_fifo_top/fifo_write_data
+add wave -position end  sim:/tb_fifo_top/fifo_full
+add wave -position end  sim:/tb_fifo_top/fifo_read_req
+add wave -position end  sim:/tb_fifo_top/fifo_empty
+add wave -position end  sim:/tb_fifo_top/ram_read_data
+run -all
+# Compile of tb_fifo_top.sv was successful.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 21:42:18 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+add wave -position end  sim:/tb_fifo_top/DEPTH_LOG
+add wave -position end  sim:/tb_fifo_top/WIDTH
+add wave -position end  sim:/tb_fifo_top/clk
+add wave -position end  sim:/tb_fifo_top/rst_n
+add wave -position end  sim:/tb_fifo_top/fifo_write_req
+add wave -position end  sim:/tb_fifo_top/fifo_write_data
+add wave -position end  sim:/tb_fifo_top/fifo_full
+add wave -position end  sim:/tb_fifo_top/fifo_read_req
+add wave -position end  sim:/tb_fifo_top/fifo_empty
+add wave -position end  sim:/tb_fifo_top/ram_read_data
+run -all
+# Break key hit
+# Break in Task test_empty_read_write at D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/tb_fifo_top.sv line 65
+# Compile of tb_fifo_top.sv was successful.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 21:43:21 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+add wave -position end  sim:/tb_fifo_top/DEPTH_LOG
+add wave -position end  sim:/tb_fifo_top/WIDTH
+add wave -position end  sim:/tb_fifo_top/clk
+add wave -position end  sim:/tb_fifo_top/rst_n
+add wave -position end  sim:/tb_fifo_top/fifo_write_req
+add wave -position end  sim:/tb_fifo_top/fifo_write_data
+add wave -position end  sim:/tb_fifo_top/fifo_full
+add wave -position end  sim:/tb_fifo_top/fifo_read_req
+add wave -position end  sim:/tb_fifo_top/fifo_empty
+add wave -position end  sim:/tb_fifo_top/ram_read_data
+run -all
+# Compile of tb_fifo_top.sv was successful.
+# Compile of fifo_control.v was successful.
+# Compile of fifo_top.v was successful.
+# Compile of model_dual_ram.v was successful.
+# Compile of pkg_dual_ram.v was successful.
+# Compile of tb_fifo_top.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 21:48:34 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+run -all
+# Compile of tb_fifo_top.sv was successful.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 21:49:41 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+run -all
+# Compile of model_dual_ram.v was successful.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 21:58:32 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+add wave -position end  sim:/tb_fifo_top/DEPTH_LOG
+add wave -position end  sim:/tb_fifo_top/WIDTH
+add wave -position end  sim:/tb_fifo_top/clk
+add wave -position end  sim:/tb_fifo_top/rst_n
+add wave -position end  sim:/tb_fifo_top/fifo_write_req
+add wave -position end  sim:/tb_fifo_top/fifo_write_data
+add wave -position end  sim:/tb_fifo_top/fifo_full
+add wave -position end  sim:/tb_fifo_top/fifo_read_req
+add wave -position end  sim:/tb_fifo_top/fifo_empty
+add wave -position end  sim:/tb_fifo_top/ram_read_data
+run -all
+add wave -position end  sim:/tb_fifo_top/dut/u_u_fifo_ram/u_ram_model/ram
+add wave -position end  sim:/tb_fifo_top/dut/u_u_fifo_ram/u_ram_model/ram_write_addr
+add wave -position end  sim:/tb_fifo_top/dut/u_u_fifo_ram/u_ram_model/ram_write_data
+add wave -position end  sim:/tb_fifo_top/dut/u_u_fifo_ram/u_ram_model/ram_read_addr
+add wave -position end  sim:/tb_fifo_top/dut/u_u_fifo_ram/u_ram_model/ram_read_data
+add wave -position end  sim:/tb_fifo_top/dut/u_u_fifo_ram/u_ram_model/ram_read_data
+add wave -position end  sim:/tb_fifo_top/ram_read_data
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 21:59:50 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+run -all
+# Compile of fifo_control.v was successful.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 22:08:52 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+run -all
+# Compile of fifo_control.v was successful.
+# Compile of fifo_top.v was successful.
+# Compile of model_dual_ram.v was successful.
+# Compile of pkg_dual_ram.v was successful.
+# Compile of tb_fifo_top.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 22:13:19 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+run -all
+# Compile of fifo_control.v was successful.
+# Compile of fifo_top.v was successful.
+# Compile of model_dual_ram.v was successful.
+# Compile of pkg_dual_ram.v was successful.
+# Compile of tb_fifo_top.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_fifo_top
+# vsim 
+# Start time: 22:13:58 on Nov 25,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.tb_fifo_top
+# Loading work.fifo_top
+# Loading work.fifo_control
+# Loading work.pkg_dual_ram
+# Loading work.model_dual_ram
+run -all
+# End time: 22:14:58 on Nov 25,2017, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 1

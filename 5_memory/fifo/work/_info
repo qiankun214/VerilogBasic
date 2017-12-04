@@ -1,0 +1,113 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/uart
+vfifo_control
+Z0 !s110 1511619233
+!i10b 1
+!s100 D[BR5YPZKakCb_LGLCbQ70
+IDh0^GBgmj6ZZU=J]97D]73
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo
+w1511618678
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_control.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_control.v
+L0 1
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1511619233.412000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_control.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_control.v|
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vfifo_top
+R0
+!i10b 1
+!s100 1l_PF0HEDg7^63=JE4TJE2
+I>MQR6TjaUnSPcMOJ>6de92
+R1
+R2
+w1511443475
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_top.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1511619233.525000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_top.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_top.v|
+!i113 1
+R4
+vmodel_dual_ram
+R0
+!i10b 1
+!s100 R57ASA26fMmdlI;^Nh`PZ3
+IobQUZCi85lRkRgbBV2h3j3
+R1
+R2
+w1511618300
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/model_dual_ram.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/model_dual_ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1511619233.689000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/model_dual_ram.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/model_dual_ram.v|
+!i113 1
+R4
+vpkg_dual_ram
+R0
+!i10b 1
+!s100 ?Vcz[^YjaLWkcNjbBKaI03
+I^:Dd2TQb=GI=?iGNGM4WR1
+R1
+R2
+w1511192127
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/pkg_dual_ram.v
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/pkg_dual_ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1511619233.844000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/pkg_dual_ram.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/pkg_dual_ram.v|
+!i113 1
+R4
+vtb_fifo_top
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1511619234
+!i10b 1
+!s100 L50@JHG]=^2;IM7f6ceS]1
+I9IL9:ITe]ih;;`X]f1cJB2
+R1
+!s105 tb_fifo_top_sv_unit
+S1
+R2
+w1511619225
+8D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/tb_fifo_top.sv
+FD:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/tb_fifo_top.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1511619234.027000
+!s107 D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/tb_fifo_top.sv|
+!s90 -reportprogress|300|-work|work|-novopt|-sv|-stats=none|D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/tb_fifo_top.sv|
+!i113 1
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

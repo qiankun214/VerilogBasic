@@ -1,0 +1,36 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_top.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_top.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module fifo_top
+
+Top level modules:
+	fifo_top
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/pkg_dual_ram.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/pkg_dual_ram.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module pkg_dual_ram
+
+Top level modules:
+	pkg_dual_ram
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/tb_fifo_top.sv {1 {vlog -work work -novopt -sv -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/tb_fifo_top.sv
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module tb_fifo_top
+
+Top level modules:
+	tb_fifo_top
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_control.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/fifo_control.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module fifo_control
+
+Top level modules:
+	fifo_control
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/model_dual_ram.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/5_memory/fifo/model_dual_ram.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module model_dual_ram
+
+Top level modules:
+	model_dual_ram
+
+} {} {}}
