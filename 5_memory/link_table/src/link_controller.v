@@ -35,6 +35,7 @@ module link_controller #(
 	//from/to outside
 	input link_table_write_req,
 	input link_table_read_req,
+	output reg link_table_busy
 );
 
 localparam INIT = 2'd0;
@@ -206,6 +207,15 @@ always @ (posedge clk or negedge rst_n) begin
 		link_table_read_valid <= 1'b1;
 	end else begin
 		link_table_read_valid <= 'b0;
+	end
+end
+
+//to outside
+always @ (posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
+		link_table_busy <= 'b0
+	end else begin
+		link_table_busy <= is_mode_init;
 	end
 end
 

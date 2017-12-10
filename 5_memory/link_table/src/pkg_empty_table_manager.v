@@ -20,7 +20,7 @@ addr_manager #(
 	.ADDR_PAGE_NUM_LOG(ADDR_PAGE_NUM_LOG),
 	.DATA_WIDTH(DATA_WIDTH),
 	.MODE_INIT(MODE_INIT)
-)(
+) u_empty_table_manager (
 	.clk(clk),    // Clock
 	.rst_n(rst_n),  // Asynchronous reset active low
 

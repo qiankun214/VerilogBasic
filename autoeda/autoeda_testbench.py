@@ -115,6 +115,6 @@ class autoeda_testbench_generator(autoeda_component_template_generator):
 
 if __name__ == '__main__':
     test = autoeda_testbench_generator()
-    test("../5_memory/stack/stack.v",
-         tb_path="../5_memory/stack/tb_stack.sv",
+    test("../5_memory/link_table/src/link_controller.v",
+         tb_path="../5_memory/link_table/testbench/tb_link_controller.v",
          fsdb=False, vcd=False)
