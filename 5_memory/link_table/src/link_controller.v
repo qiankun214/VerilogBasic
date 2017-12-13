@@ -7,28 +7,25 @@ module link_controller #(
 	input rst_n,  // Asynchronous reset active low
 
 	//from/to table addr manager
-	input [ADDR_PAGE_NUM_LOG - 1:0]data_table_read_addr,
-	input [ADDR_PAGE_NUM_LOG - 1:0]data_table_read_last_addr,
+	input [ADDR_PAGE_NUM_LOG - 1:0]data_table_head_addr,
+	input [ADDR_PAGE_NUM_LOG - 1:0]data_table_last_addr,
 	input data_table_empty,
 	output reg data_table_read_req,
 	output reg data_table_write_req,
 	output [ADDR_PAGE_NUM_LOG - 1:0]data_table_write_addr,
 
 	//from/to empty addr manager
-	input [ADDR_PAGE_NUM_LOG - 1:0]empty_table_read_addr,
-	input [ADDR_PAGE_NUM_LOG - 1:0]empty_table_read_last_addr,
+	input [ADDR_PAGE_NUM_LOG - 1:0]empty_table_head_addr,
+	input [ADDR_PAGE_NUM_LOG - 1:0]empty_table_last_addr,
 	input empty_table_empty,
 	output reg empty_table_read_req,
 	output reg empty_table_write_req,
 	output [ADDR_PAGE_NUM_LOG - 1:0]empty_table_write_addr,
 
-	//to ram
-	output reg ram_write_req,
-	output reg [ADDR_WIDTH - 1:0]ram_addr,
-	// input [DATA_WIDTH - 1:0]ram_read_data,
-
 	//to dataflow controller
-	output [DATA_WIDTH - 1:0]ram_write_data,
+	output reg link_controller_write_req,
+	output reg [ADDR_WIDTH - 1:0]link_controller_addr,
+	output [DATA_WIDTH - 1:0]link_controller_write_data,
 	output reg ram_controller_write_req,
 	output reg link_table_read_valid
 
@@ -38,16 +35,17 @@ module link_controller #(
 	output reg link_table_busy
 );
 
-localparam INIT = 2'd0;
-localparam REQ_ADDR = 2'd1;
-localparam DATAFLOW = 2'd2;
-localparam REWRITE = 2'd3;
+localparam INIT = 3'd0;
+localparam REQ_ADDR = 3'd1;
+localparam DATAFLOW = 3'd2;
+localparam REWRITE = 3'd3;
+localparam REWRITE_NEXT = 3'd4;
 
-reg [1:0]mode,next_mode;
+reg [2:0]mode,next_mode;
 wire is_mode_init = (mode == INIT)?1'b1:1'b0;
 wire is_mode_req_addr = (mode == REQ_ADDR)?1'b1:1'b0;
 wire is_mode_dataflow = (mode == DATAFLOW)?1'b1:1'b0;
-wire is_mode_rewrite = (mode == REWRITE)?1'b1:1'b0;
+wire is_mode_rewrite = ((mode == REWRITE) || (mode == REWRITE_NEXT))?1'b1:1'b0;
 always @(posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
 		mode <= INIT;
@@ -87,7 +85,8 @@ always @(*) begin
 				next_mode = DATAFLOW;
 			end
 		end
-		REWRITE:next_mode = INIT;
+		REWRITE:next_mode = REWRITE_NEXT;
+		REWRITE_NEXT:next_mode = INIT;
 		default:next_mode = INIT;
 	endcase
 end
@@ -107,9 +106,9 @@ always @(posedge clk or negedge rst_n) begin
 		page_addr_buffer <= 'b0;
 	end else if(next_mode == REQ_ADDR) begin
 		if(link_table_write_req) begin
-			page_addr_buffer <= empty_table_read_addr;
+			page_addr_buffer <= empty_table_head_addr;
 		end else begin
-			page_addr_buffer <= data_table_read_addr;
+			page_addr_buffer <= data_table_head_addr;
 		end
 	end
 end
@@ -163,30 +162,49 @@ assign empty_table_write_addr <= page_addr_buffer;
 //ram control
 always @(posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
-		ram_write_req <= 'b0;
+		link_controller_write_req <= 'b0;
 	end else if(write_req_buffer && is_mode_dataflow) begin
-		ram_write_req <= 1'b1;
+		link_controller_write_req <= 1'b1;
 	end else begin
-		ram_write_req <= 'b0;
+		link_controller_write_req <= 'b0;
 	end
 end
 
 always @(posedge clk or negedge rst_n) begin : proc_ram
 	if(~rst_n) begin
-		ram_addr <= 'b0;
+		link_controller_addr <= 'b0;
 	end else begin
 		case (mode)
-			REQ_ADDR:ram_addr <= page_addr_buffer;
-			DATAFLOW_NUM:ram_addr <= {page_addr_buffer,controller_counter};
+			REQ_ADDR:link_controller_addr <= page_addr_buffer;
+			DATAFLOW_NUM:link_controller_addr <= {page_addr_buffer,controller_counter};
 			REWRITE:begin
 				if(write_req_buffer) begin
-					ram_addr <= data_table_read_last_addr;
+					link_controller_addr <= data_table_last_addr;
 				end else begin
-					ram_addr <= empty_table_read_last_addr;
+					link_controller_addr <= empty_table_last_addr;
 				end
 			end
-			default:ram_addr <= ram_addr;
+			REWRITE_NEXT:begin
+				if(write_req_buffer) begin
+					link_controller_addr <= data_table_last_addr + 1'b1;
+				end else begin
+					link_controller_addr <= empty_table_last_addr + 1'b1;
+				end
+			end
+			default:link_controller_addr <= link_controller_addr;
 		endcase
+	end
+end
+
+always @ (posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
+		link_controller_write_data <= 'b0;
+	end else if(is_mode_rewrite) begin
+		if(mode == REWRITE) begin
+			link_controller_write_data <= page_addr_buffer[DATA_WIDTH - 1:0];
+		end else begin
+			link_controller_write_data <= {(2 * DATA_WIDTH - ADDR_PAGE_NUM_LOG + 2)'0,page_addr_buffer[ADDR_PAGE_NUM_LOG - 1:DATA_WIDTH]};
+		end
 	end
 end
 
