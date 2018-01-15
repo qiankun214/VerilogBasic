@@ -1,3 +1,4 @@
+`include "defines.v"
 module low_to_high #(
 	parameter LOW_DATA_WIDTH = 8,
 	parameter ADDR_WIDTH = 16,
@@ -39,7 +40,6 @@ end
 
 // get naive start addr of brust transform
 reg [15:0]temp_start_addr;
-assign debug_num[23:16] = temp_start_addr[15:8];
 always @ (posedge clk or negedge rst_n) begin
 	if(~rst_n) begin
 		temp_start_addr <= 'b0;
@@ -110,13 +110,6 @@ always @(*) begin : proc_next_mode
 				next_mode = DATA_HANDLE;
 			end
 		end
-		ORDER_HANDL:begin
-			if(low_read_valid) begin
-				next_mode = INIT;
-			end else begin
-				next_mode = ORDER_HANDL;
-			end
-		end
 		default : next_mode = INIT;
 	endcase
 end
@@ -131,12 +124,11 @@ always @(posedge clk or negedge rst_n) begin : proc_high_write_addr
 end
 
 // assemble data of high width bus
-wire [BRUST_SIZE_LOG - 1:0]assemble_start = tran_counter[BRUST_SIZE_LOG - 1:0] * LOW_DATA_WIDTH;
 always @(posedge clk or negedge rst_n) begin : proc_high_write_data
 	if(~rst_n) begin
 		high_write_data <= 'b0;
 	end else begin
-		high_write_data[assemble_addr +:LOW_DATA_WIDTH] <= low_read_data;
+		high_write_data[tran_counter[BRUST_SIZE_LOG - 1:0] * LOW_DATA_WIDTH +:LOW_DATA_WIDTH] <= low_read_data;
 	end
 end
 

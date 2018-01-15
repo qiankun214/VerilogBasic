@@ -1,0 +1,25 @@
+D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/bus_decode/src/bus_decode.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/bus_decode/src/bus_decode.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module bus_decode
+
+Top level modules:
+	bus_decode
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/bus_decode/src/defines.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/bus_decode/src/defines.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/bus_decode/src/low_to_high.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/bus_decode/src/low_to_high.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module low_to_high
+
+Top level modules:
+	low_to_high
+
+} {} {}} D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/bus_decode/src/high_to_low.v {1 {vlog -work work -novopt -stats=none D:/HDL/veilorg/learning_with_book/digital_signal_process/4_basic_bus/bus_decode/src/high_to_low.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module high_to_low
+
+Top level modules:
+	high_to_low
+
+} {} {}}

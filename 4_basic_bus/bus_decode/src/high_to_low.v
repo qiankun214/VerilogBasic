@@ -35,10 +35,10 @@ reg [BRUST_SIZE_LOG - 1:0]tran_counter;
 always @(posedge clk or negedge rst_n) begin : proc_tran_counter
 	if(~rst_n) begin
 		tran_counter <= 'b0;
-	end else if(low_write_finish) begin
-		tran_counter <= tran_counter + 1'b1;
 	end else if(mode != WORK) begin
 		tran_counter <= 'b0;
+	end else if(low_write_finish) begin
+		tran_counter <= tran_counter + 1'b1;
 	end
 end
 
@@ -68,9 +68,9 @@ reg temp_low_write_valid;
 always @(posedge clk or negedge rst_n) begin : proc_temp_low_write_valid
 	if(~rst_n) begin
 		temp_low_write_valid <= 'b0;
-	end else if(high_read_valid) begin
+	end else if(high_read_valid && next_mode == WORK && mode == INIT) begin
 		temp_low_write_valid <= 1'b1;
-	end else if(low_write_finish && (tran_counter != 2 ** BRUST_SIZE_LOG - 1)) begin
+	end else if(low_write_finish && (tran_counter != 2 ** BRUST_SIZE_LOG - 1) && mode == WORK) begin
 		temp_low_write_valid <= 1'b1;
 	end else begin
 		temp_low_write_valid <= 'b0;
@@ -97,4 +97,13 @@ always @(posedge clk or negedge rst_n) begin : proc_low_write_data
 	end
 end
 
+always @ (posedge clk or negedge rst_n) begin
+	if (~rst_n) begin
+		high_read_finish <= 'b0;
+	end else if	(mode == WORK && next_mode == INIT)begin
+	  	high_read_finish <= 'b1;
+	end else begin
+		high_read_finish <= 'b0;
+	end
+end
 endmodule
