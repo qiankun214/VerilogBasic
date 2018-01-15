@@ -38,7 +38,7 @@ class autoeda_testbench_generator(autoeda_component_template_generator):
         tb_content = [self._tb_head_gen()]
         tb_content.append(self.tb_param_define())
         tb_content.append(self.tb_value_define(type_def="logic"))
-        tb_content.append(self.tb_module_instances())
+        tb_content.append(self.tp_module_instances())
         if fsdb is True:
             tb_content.append(self.dump_fsdb.replace(
                 "this_module_name", self.module_name))
@@ -115,6 +115,4 @@ class autoeda_testbench_generator(autoeda_component_template_generator):
 
 if __name__ == '__main__':
     test = autoeda_testbench_generator()
-    test("../5_memory/link_table/src/link_controller.v",
-         tb_path="../5_memory/link_table/testbench/tb_link_controller.v",
-         fsdb=False, vcd=False)
+    test("bus_decode.v", tb_path="tb_top.sv", fsdb=False, vcd=False)

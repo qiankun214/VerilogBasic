@@ -17,13 +17,13 @@ class autoeda_component_template_generator(autoeda_file_handle,
             self.bfuc_get_module_name()
             self.bfuc_get_ports()
             template_content.append(
-                self.tb_module_instances(
+                self.tp_module_instances(
                     port_connection_mode=port_connection_mode,
                     param_connection_mode=param_connection_mode,
                     instance_name="u_%s" % key))
         self.bfuc_write_file(template_path, "\n\n".join(template_content))
 
-    def tb_module_instances(self, modult_info=None, instance_name="dut",
+    def tp_module_instances(self, modult_info=None, instance_name="dut",
                             param_connection_mode=None,
                             port_connection_mode=None, indent=""):
         if modult_info is None:
@@ -36,17 +36,17 @@ class autoeda_component_template_generator(autoeda_file_handle,
                 module_name, indent, instance_name)]
         else:
             module_content = ["%s%s #(" % (module_name, indent)]
-            module_content.append(self.tb_param_instances(
+            module_content.append(self.tp_param_instances(
                 params_dict, connection_mode=param_connection_mode,
                 indent=indent + "\t"))
             module_content.append("%s) %s (" % (indent, instance_name))
-        module_content.append(self.tb_port_instances(
+        module_content.append(self.tp_port_instances(
             port_list, connection_mode=port_connection_mode,
             indent="\t" + indent))
         module_content.append("%s);" % indent)
         return "\n".join(module_content)
 
-    def tb_param_instances(self, params_dict=None,
+    def tp_param_instances(self, params_dict=None,
                            connection_mode=None, indent="\t"):
         if params_dict is None:
             params_dict = self.params_dict
@@ -60,7 +60,7 @@ class autoeda_component_template_generator(autoeda_file_handle,
                                connection_mode(param)))
         return "\n".join(param_list)[:-1]
 
-    def tb_port_instances(self, port_list=None,
+    def tp_port_instances(self, port_list=None,
                           connection_mode=None, indent="\t"):
         if port_list is None:
             port_list = self.port_list
@@ -82,6 +82,6 @@ class autoeda_component_template_generator(autoeda_file_handle,
 
 if __name__ == '__main__':
     test = autoeda_component_template_generator()
-    test_dict = {"stack_ram": "../5_memory/stack/pkg_simple_ram.v",
-                 "stack_control": "../5_memory/stack/stack_controller.v"}
-    test(test_dict, template_path="../5_memory/stack/stack.v")
+    test_dict = {"config": "./test/spi_config.v",
+                 "config_2": "./test/spi_config.v"}
+    test(test_dict, port_connection_mode=lambda x: "<connection %s>" % x)
