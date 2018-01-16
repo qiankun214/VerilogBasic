@@ -63,6 +63,15 @@ always @(*) begin : proc_next_mode
 	endcase
 end
 
+reg [LOW_DATA_WIDTH * (2 ** BRUST_SIZE_LOG) - 1:0]high_read_data_lock;
+always @ (posedge clk or negedge rst_n) begin
+	if (~rst_n) begin
+		high_read_data_lock <= 'b0;
+	end else if (mode == INIT) begin
+		high_read_data_lock <= high_read_data;
+	end
+end
+
 // generate the valid signal of low width bus
 reg temp_low_write_valid;
 always @(posedge clk or negedge rst_n) begin : proc_temp_low_write_valid
@@ -91,9 +100,9 @@ always @(posedge clk or negedge rst_n) begin : proc_low_write_data
 	if(~rst_n) begin
 		low_write_data <= 'b0;
 	end else if(mode == INIT) begin
-		low_write_data <= high_read_data[LOW_DATA_WIDTH - 1:0];
+		low_write_data <= high_read_data_lock[LOW_DATA_WIDTH - 1:0];
 	end else if(temp_low_write_valid) begin
-		low_write_data <= high_read_data[tran_counter * LOW_DATA_WIDTH +:LOW_DATA_WIDTH];
+		low_write_data <= high_read_data_lock[tran_counter * LOW_DATA_WIDTH +:LOW_DATA_WIDTH];
 	end
 end
 
